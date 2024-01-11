@@ -4,31 +4,47 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Recipe</title>
 </head>
 <body>
   <header>
-
     <div class="nav-bar">
-        <header>
-            <nav class="flex justify-between">
-              <h1 class="ml-3 text-center recipe-guide">Recipe Guide</h1>
-      
-              <h1 class="mr-3">Favorite Recipes</h1>
-            </nav>
+      <nav class="flex justify-between">
+        <h1 class="ml-3 text-center recipe-guide">Recipe Guide</h1>
+        <h1 class="mr-3">Favorite Recipes</h1>
+      </nav>
     </div>
   </header>
-  <div id="recipe-container">
-    <div>
-      <h1><span class="selected-recipe">Chicken Soup</span></h1>
-      <ol id="cooking-steps-container">
-        <li id="cooking-steps"> Step 1</li>
-      </ol>
+  <main class="flex justify-center items-start h-screen">
+    <div class="w-1/4">
+      <div class="relative h-32 w-32 mt-4">
+        <div class="absolute inset-0">
+            <h2 class="ingredients-container"> Ingredients</h2>
+          <ul id="ingredients-list">
+            <li id="ingredients">Cheese</li>
+            <li>broth</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
+    <div class="w-3/4 flex justify-center items-center">
+      <div id="recipe-container">
+        <div>
+          <h1><span class="selected-recipe">Chicken Soup</span></h1>
+          <ol id="cooking-steps-container">
+            <li id="cooking-steps">Step 1</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer flex justify-center">
+      <h1>Thank you for visiting our site! Enjoy the recipes</h1>
+    </div>
+  </footer>
 </body>
-<foot> Thank you for visting our site! Enjoy the recipes</foot>
 </html>
