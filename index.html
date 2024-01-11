@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between">
+        <h1 class="ml-3 text-center recipe-guide">Recipe Guide</h1>
+
+        <h1 class="mr-3">Favorite Recipes</h1>
+      </nav>
+    </header>
+    <main>
+      <div class="flex flex-col w-1/6">
+        <input type="search" placeholder="search" class="text-center border" id="search">
+        <hr>
+      </div>
+      <div id="filters">
+        <p>+ Cuisines</p>
+        <ul>
+          <li>Test 1</li>
+          <li>Test 2</li>
+          <li>Test 3</li>
+        </ul>
+
+      </div>
+
+      <section class="display-recipes" id="recipes">
+        <h2>Easy Recipes</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <a href="https://spoonacular.com/recipes/healthy-quinoa-salad-1847920">
+              <img src="https://spoonacular.com/recipeImages/1847920-556x370.jpg" height="auto" width="auto">
+              <p>Healthy Quinoa Salad</p>
+            </a>
+            <a href="https://spoonacular.com/recipes/dijon-garlic-brussels-sprouts-1747679">
+              <img src="https://spoonacular.com/recipeImages/1747679-556x370.jpg" height="auto" width="auto">
+              <p>Dijon Garlic Brussels Sprouts</p>
+            </a>
+            
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    <script src="./assets/javascript/script.js"></script>
+  </body>
+</html>
