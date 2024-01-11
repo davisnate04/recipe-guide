@@ -4,7 +4,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/recipe-pg.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Recipe</title>
@@ -20,13 +20,15 @@
   </header>
   <main class="flex justify-center items-start h-screen">
     <div class="w-1/4">
-      <div class="relative h-32 w-32 mt-4">
+      <div class="relative h-32 w-32">
         <div class="absolute inset-0">
-            <h2 class="ingredients-container"> Ingredients</h2>
-          <ul id="ingredients-list">
-            <li id="ingredients">Cheese</li>
-            <li>broth</li>
-          </ul>
+          <div id="ingredients-container">
+            <h2>Ingredients:</h2>
+            <ul id="ingredients-list">
+              <li>Cheese</li>
+              <li>broth</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

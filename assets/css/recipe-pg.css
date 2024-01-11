@@ -1,9 +1,35 @@
-html{
-    background:whitesmoke
-}
-
-#ingredients-list{
-    maring-top: 30px;
-
-
-}
+html {
+    background: whitesmoke;
+  }
+  
+  .nav-bar {
+    margin-top: 20px;
+  }
+  
+  #ingredients-container {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  #ingredients-list {
+    margin-top: 10px;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  
+  #recipe-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #cooking-steps-container {
+    margin-top: 20px;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  
+  .selected-recipe {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
