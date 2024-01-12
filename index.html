@@ -23,7 +23,8 @@
       </nav>
     </header>
     <main>
-      <div class="flex flex-col w-1/6">
+      <div id="sidebar" class="border-r-4 text-center inline-block">
+      <div class="flex flex-col">
         <input type="search" placeholder="search" class="text-center border" id="search">
         <hr>
       </div>
@@ -34,28 +35,39 @@
           <li>Test 2</li>
           <li>Test 3</li>
         </ul>
-
+      </div>
+        
       </div>
 
-      <section class="display-recipes" id="recipes">
-        <h2>Easy Recipes</h2>
+      <div class="display-recipes" id="recipes">
         <div class="grid-container">
-          <div class="grid-item">
+          <div class="grid-item grid-item1">
             <a href="https://spoonacular.com/recipes/healthy-quinoa-salad-1847920">
-              <img src="https://spoonacular.com/recipeImages/1847920-556x370.jpg" height="auto" width="auto">
+              <img src="https://spoonacular.com/recipeImages/1847920-556x370.jpg">
               <p>Healthy Quinoa Salad</p>
             </a>
+          </div>
+          <div class="grid-item grid-item2">
             <a href="https://spoonacular.com/recipes/dijon-garlic-brussels-sprouts-1747679">
-              <img src="https://spoonacular.com/recipeImages/1747679-556x370.jpg" height="auto" width="auto">
+              <img src="https://spoonacular.com/recipeImages/1747679-556x370.jpg">
               <p>Dijon Garlic Brussels Sprouts</p>
             </a>
-            
           </div>
-        </div>
-      </section>
-
-
+          <div class="grid-item grid-item3">
+            <a href="https://spoonacular.com/recipes/chocolate-cake-in-a-mug-1697661">
+              <img src="https://spoonacular.com/recipeImages/1697661-556x370.jpg">
+              <p>Chocolate Mug Cake</p> 
+            </a>
+          </div>
+          </div>
+      </div>
     </main>
+    
+    <footer>
+      <div class="footer flex justify-center"> 
+      <h1>Thank You for visiting Us!</h1>
+      </div> 
+    </footer>
     <script src="./assets/javascript/script.js"></script>
   </body>
 </html>
