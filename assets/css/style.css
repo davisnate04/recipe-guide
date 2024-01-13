@@ -82,14 +82,16 @@ footer {
     maring-top: 30px;
 
 }
-ul, #myUL {
+
+ul,
+#myUL {
     list-style-type: none;
-  }
+}
 
 #myUL {
     margin: 0;
     padding: 0;
-  }
+}
 
 .caret {
     cursor: pointer;
@@ -108,65 +110,96 @@ ul, #myUL {
     transform: rotate(90deg);
 }
 
-  .nested {
+.nested {
     display: none;
 }
-  
+
 .active {
     display: block;
-  }
+}
 
 
 
 @media screen and (max-width: 1200px) {
     body {
         flex-shrink: inherit;
-        padding: 15px;
+
     }
-    #sidebar { float: left; width: auto;}
+
+    #sidebar {
+        float: left;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 1000px) {
     header #sidebar {
         flex-shrink: inherit;
     }
-    #sidebar {float: left; width: auto;}
+
+    #sidebar {
+        float: left;
+        width: auto;
+    }
+
     body {
         flex-shrink: inherit;
-        padding: 10px;
+
     }
 }
+
 @media screen and (max-width: 800px) {
     header #sidebar {
         flex-shrink: inherit;
     }
-    #sidebar {float: left; width: auto;}
+
+    #sidebar {
+        float: left;
+        width: auto;
+    }
+
     body {
         flex-shrink: inherit;
-        padding: 10px;
-    }   
+
+    }
 }
+
 @media screen and (max-width: 300px) {
     header #sidebar {
         flex-shrink: inherit;
     }
-    #sidebar {float: left; width: auto;}
+
+    #sidebar {
+        float: left;
+        width: auto;
+    }
+
     body {
         flex-shrink: inherit;
-        padding: 7px;
-    } 
+
+    }
 }
+
 @media screen and (max-width:200px) {
     header #sidebar {
         flex-shrink: inherit;
     }
-    #sidebar {float: left; width: auto;}
+
+    #sidebar {
+        float: left;
+        width: auto;
+    }
+
     body {
         flex-shrink: inherit;
-        padding: 5px;
-    } 
+
+    }
 }
+
 @media screen and (max-width: 480px) {
-    #sidebar {float: left; width: auto;}
-   
-  }
+    #sidebar {
+        float: left;
+        width: auto;
+    }
+
+}
