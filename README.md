@@ -5,7 +5,7 @@
 Recipe guide is an application where you can search and try new recipies daily. In addition to recipes from various cuisines, you will also find easy and healthy recipes.
 
 First view of the app.
-<img src="./images/recipe-guide-img1.png">
+<img src="./images/recipe-guide-img-1.png">
 
 ## Features 
 
