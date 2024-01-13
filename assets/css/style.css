@@ -71,41 +71,66 @@ button {
     margin-bottom: 5px;
 }
 
-#filters ul {
-    margin-left: 10px;
-    list-style-type: "+";
-}
-
-#filters li {
-    cursor: pointer;
-    width: fit-content;
-    margin-left: 80px;
-}
-
 footer {
     background: rgb(207, 233, 242);
     border-top: 3px solid black;
     font-size: 25px;
+    flex-shrink: 0;
 }
 
 #ingredients-list {
     maring-top: 30px;
 
 }
+ul, #myUL {
+    list-style-type: none;
+  }
+
+#myUL {
+    margin: 0;
+    padding: 0;
+  }
+
+.caret {
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.caret-down::before {
+    transform: rotate(90deg);
+}
+
+  .nested {
+    display: none;
+}
+  
+.active {
+    display: block;
+  }
+
+
 
 @media screen and (max-width: 1200px) {
     body {
         flex-shrink: inherit;
         padding: 15px;
     }
-    #sidebar {height: auto; float: left; width: auto;}
+    #sidebar { float: left; width: auto;}
 }
 
 @media screen and (max-width: 1000px) {
     header #sidebar {
         flex-shrink: inherit;
     }
-    #sidebar {height: auto; float: left; width: auto;}
+    #sidebar {float: left; width: auto;}
     body {
         flex-shrink: inherit;
         padding: 10px;
@@ -115,7 +140,7 @@ footer {
     header #sidebar {
         flex-shrink: inherit;
     }
-    #sidebar {height: auto; float: left; width: auto;}
+    #sidebar {float: left; width: auto;}
     body {
         flex-shrink: inherit;
         padding: 10px;
@@ -125,7 +150,7 @@ footer {
     header #sidebar {
         flex-shrink: inherit;
     }
-    #sidebar {height: auto; float: left; width: auto;}
+    #sidebar {float: left; width: auto;}
     body {
         flex-shrink: inherit;
         padding: 7px;
@@ -135,13 +160,13 @@ footer {
     header #sidebar {
         flex-shrink: inherit;
     }
-    #sidebar {height: auto; float: left; width: auto;}
+    #sidebar {float: left; width: auto;}
     body {
         flex-shrink: inherit;
         padding: 5px;
     } 
 }
 @media screen and (max-width: 480px) {
-    #sidebar {height: auto; float: left; width: auto;}
+    #sidebar {float: left; width: auto;}
    
   }
