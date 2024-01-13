@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Linking external stylesheets and scripts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
@@ -20,24 +21,23 @@
   </header>
   <main class="flex justify-center items-start h-screen">
     <div class="w-1/4">
-      <div class="relative h-32 w-32">
-        <div class="absolute inset-0">
-          <div id="ingredients-container">
-            <h2>Ingredients:</h2>
-            <ul id="ingredients-list">
-              <li>Cheese</li>
-              <li>broth</li>
-            </ul>
-          </div>
+      <div class="max-w-sm rounded overflow-hidden mt-10 shadow-lg bg-blue-200 bg-opacity-50 md:bg-blue-200  lg:bg-rgb(207, 233, 242)">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2"> <p> Ingredients</p></div>
+          <hr class="border-solid border 4 border-black">
+          <ul id="ingredients-list class=md:text-left lg:text-center">
+            <li class="md:text-left lg:text-center">Cheese</li>
+            <li class="md:text-left lg:text-center">Broth</li>
+          </ul>
         </div>
       </div>
     </div>
     <div class="w-3/4 flex justify-center items-center">
-      <div id="recipe-container">
+      <div id="recipe-container" class="flex-column">
         <div>
-          <h1><span class="selected-recipe">Chicken Soup</span></h1>
+          <h1 class="text-center mr-10"><span class="selected-recipe text-center">Chicken Soup</span></h1>
           <ol id="cooking-steps-container">
-            <li id="cooking-steps">Step 1</li>
+            <li id="cooking-steps" class="text-center mr-10">Step 1</li>
           </ol>
         </div>
       </div>
@@ -49,3 +49,4 @@
     </div>
   </footer>
 </body>
+</html>
