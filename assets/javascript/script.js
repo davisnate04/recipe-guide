@@ -1,3 +1,5 @@
+const API_key = "19a1a36ee25a40f58a81525e4812cde9"; 
+
 var toggler = document.getElementsByClassName("caret");
 var i;
 
