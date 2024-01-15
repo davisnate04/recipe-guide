@@ -3,10 +3,10 @@ const urlParams = new URLSearchParams (window.location.search);
 const id = urlParams. get ('selectedRecipe')
 
 // Make a GET 
-fetch (`https://api.spoonacular.com/recipes/{id}/analyzedInstructions`)
+fetch (`https://api.spoonacular.com/recipes/795514/analyzedInstructions?apiKey=19a1a36ee25a40f58a81525e4812cde9`)
+
 .then(response => response.json())
 .then(data => {
-    data = result;
   
   const recipeNameElement = document.querySelector('.selected-recipe');
   recipeNameElement.textContent = data.name;
@@ -45,12 +45,12 @@ function addToFavorites(id, name) {
     const isAlreadyFavorite = favorites.some(favorite => favorite.id === id);
   
     if (isAlreadyFavorite) {
-      console.log(`Recipe ${recipeName} is already in favorites.`);
+      console.log(`Recipe ${name} is already in favorites.`);
       return;
     }
   
     // Add the recipe to favorites
-    favorites.push({ id:id, name: name});
+    favorites.push({ id,name});
   
     // Save the updated favorites to local storage
     localStorage.setItem('favorites', JSON.stringify(favorites));
