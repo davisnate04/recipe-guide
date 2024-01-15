@@ -1,35 +1,195 @@
 html {
-    background: whitesmoke;
-  }
-  
+  background: white;
+}
+
+body {
+  background-image: url("assets/recipe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.nav-bar {
+  border-bottom: 3px solid;
+  background: rgb(207, 233, 242);
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
   .nav-bar {
-    margin-top: 20px;
+    font-size: 14px;
   }
-  
-  #ingredients-container {
-    text-align: left;
-    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .nav-bar {
+    font-size: 10px;
   }
-  
+}
+
+
+#ingredients-list {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.selected-recipe {
+  font-size: 35px;
+  font-weight: bold;
+  word-wrap: break-word;
+  text-align: center;
+  margin-top: 35px;
+}
+
+@media (max-width: 768px) {
   #ingredients-list {
-    margin-top: 10px;
-    padding-left: 0;
-    list-style-type: none;
+    text-align: left;
+    font-size: 10px;
   }
   
-  #recipe-container {
+  .max-w-sm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #ingredients-list {
     text-align: center;
-    margin-top: 50px;
+    font-size: 8px;
   }
   
-  #cooking-steps-container {
-    margin-top: 20px;
-    padding-left: 0;
-    list-style-type: none;
+  .max-w-sm {
+    width: 100%;
   }
   
   .selected-recipe {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 20px;
   }
+}
+
+p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+ p {
+    text-align: left;
+    font-size: 12px;
+  }
+  
+  .max-w-sm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  p{
+    text-align: center;
+    font-size: 8px;
+  }
+  
+  .max-w-sm {
+    width: 100%;
+  }
+  
+  .selected-recipe {
+    font-size: 25px;
+  }
+}
+
+
+#addToFavorites {
+  padding: 8px 12px;
+  font-size: 14px; 
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cooking-steps-container {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#cooking-steps {
+  text-align: center;
+  font: size 18px;
+}
+
+@media (max-width: 768px) {
+  #cooking-steps-container {
+    text-align: left;
+  }
+  
+  #cooking-steps {
+    text-align: left;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #cooking-steps-container {
+    text-align: center;
+  }
+  
+  #cooking-steps {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+button{
+  background: rgb(207, 233, 242);
+
+}
+
+h1 {
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+li {
+  text-align: center;
+}
+
+footer {
+  background: rgb(207, 233, 242);
+  border-top: 3px solid black;
+  font-size: 25px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 18px;
+    background: rgb(207, 233, 242);
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    font-size: 13px;
+    background: rgb(207, 233, 242);
+  }
+}
