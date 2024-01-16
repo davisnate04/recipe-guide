@@ -64,11 +64,11 @@ https://davisnate04.github.io/recipe-guide/
 
 ## Authors
 
-Dilek Nuredin - [GitHub] (https://github.com/dileknrdn)
+Dilek Nuredin - [GitHub](https://github.com/dileknrdn)
 
-Jaylen Williams - [GitHub] (https://github.com/jmw2227)
+Jaylen Williams - [GitHub](https://github.com/jmw2227)
 
-Nathaniel Davis - [GitHub] (https://github.com/davisnate04)
+Nathaniel Davis - [GitHub](https://github.com/davisnate04)
 
 
 
