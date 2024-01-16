@@ -1,15 +1,28 @@
 // Retrieve ID from homepage.html
 const urlParams = new URLSearchParams (window.location.search);
-const id = urlParams. get ('selectedRecipe')
+const queryId = urlParams. get ('selectedRecipe')
+
+// GET for query id (name)
+fetch (`https://api.spoonacular.com/recipes/complexSearch?query=${queryId}&apiKey=19a1a36ee25a40f58a81525e4812cde9`)
+.then(response => response.json())
+.then (data => {
+    console.log (data)
+    console.log (queryId)
+    var id = data
+}
+)
+
+
 
 // Make a GET 
-fetch (`https://api.spoonacular.com/recipes/795514/analyzedInstructions?apiKey=19a1a36ee25a40f58a81525e4812cde9`)
+fetch (`https://api.spoonacular.com/recipes/${id}/analyzedInstructions?apiKey=19a1a36ee25a40f58a81525e4812cde9`)
 
 .then(response => response.json())
 .then(data => {
   
   const recipeNameElement = document.querySelector('.selected-recipe');
   recipeNameElement.textContent = data.name;
+  console.log (data)
 
   // Display the cooking steps
   const stepsList = document.getElementById('cooking-steps-container');
