@@ -31,6 +31,7 @@ We used the [TailwindCSS](https://tailwindcss.com/) API for CSS. (Instead of Boo
 
 For the Recipe Guide we used the [spoonacular API](https://spoonacular.com/food-api/) food API.
 
+
 The page contains the following file structure:
 Main Page
 HTML - index.html
