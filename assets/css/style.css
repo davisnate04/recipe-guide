@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+header nav {
+    border-bottom: 3px solid;
+    background: rgb(207, 233, 242);
+    font-size: 30px;
+}
+
+h2 {
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+button {
+    padding: 8px !important;
+    border-radius: 5px;
+    outline: black 2px;
+    color: beige !important;
+    background: grey !important;
+
+}
+
+.recipe-guide {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.display-recipes {
+    display: inline-block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: minmax(auto, auto);
+    grid-gap: 20px;
+    margin: 10px 0 0 20px;
+    display: flex;
+}
+
+.grid-item {
+    border: gray solid 3px;
+
+}
+
+.grid-item a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.grid-item p {
+    text-align: center;
+}
+
+
+#sidebar {
+    height: 100vh;
+}
+
+#search {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+footer {
+    background: rgb(207, 233, 242);
+    border-top: 3px solid black;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+#ingredients-list {
+    maring-top: 30px;
+
+}
+
+ul,
+#myUL {
+    list-style-type: none;
+}
+
+#myUL {
+    margin: 0;
+    padding: 0;
+}
+
+.caret {
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.caret-down::before {
+    transform: rotate(90deg);
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    body {
+        flex-shrink: inherit;
+
+    }
+
+    #sidebar {
+        float: left;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header #sidebar {
+        flex-shrink: inherit;
+    }
+
+    #sidebar {
+        float: left;
+        width: auto;
+    }
+
+    body {
+        flex-shrink: inherit;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header #sidebar {
+        flex-shrink: inherit;
+    }
+
+    #sidebar {
+        float: left;
+        width: auto;
+    }
+
+    body {
+        flex-shrink: inherit;
+
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header #sidebar {
+        flex-shrink: inherit;
+    }
+
+    #sidebar {
+        float: left;
+        width: auto;
+    }
+
+    body {
+        flex-shrink: inherit;
+
+    }
+}
+
+@media screen and (max-width:200px) {
+    header #sidebar {
+        flex-shrink: inherit;
+    }
+
+    #sidebar {
+        float: left;
+        width: auto;
+    }
+
+    body {
+        flex-shrink: inherit;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #sidebar {
+        float: left;
+        width: auto;
+    }
+
+}
