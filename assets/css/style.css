@@ -90,9 +90,13 @@ button {
 }
 
 #recipes {
-    height:950px;
+    height:920px;
     overflow-y:scroll;
     scrollbar-width:none;
+}
+
+#recipes::-webkit-scrollbar {
+    width: 0px;
 }
 
 footer {
