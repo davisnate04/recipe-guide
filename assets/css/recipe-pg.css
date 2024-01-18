@@ -9,7 +9,6 @@ html {
   height: 100%;
 }
 
-
 .nav-bar {
   border-bottom: 3px solid;
   background: rgb(207, 233, 242);
@@ -28,12 +27,40 @@ html {
   }
 }
 
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left:8px;
+  margin-top: 15px;
+  width: 450px;
+  border-radius: 10px;
+  font-weight: medium;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  background-color: rgb(207, 233, 242, 0.8);
 
-#ingredients-list {
-  margin-top: 10px;
-  padding-left: 0;
-  list-style-type: none;
+
+
+.widget-image {
+  width: 92px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.spoonacular-amount {
   font-size: 16px;
+  margin-bottom: 5px;
+  margin-right: 3px;
+  
+}
+
+.spoonacular-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+  
 }
 
 .selected-recipe {
@@ -45,63 +72,43 @@ html {
 }
 
 @media (max-width: 768px) {
-  #ingredients-list {
-    text-align: left;
-    font-size: 10px;
-  }
-  
-  .max-w-sm {
-    width: 100%;
+  .widget-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 8px;
   }
 }
 
 @media (max-width: 480px) {
-  #ingredients-list {
-    text-align: center;
-    font-size: 8px;
-  }
-  
-  .max-w-sm {
+  .widget-image {
     width: 100%;
+    height: auto;
   }
-  
-  .selected-recipe {
-    font-size: 20px;
-  }
-}
-
-p {
-  text-align: center;
 }
 
 @media (max-width: 768px) {
- p {
-    text-align: left;
+  .spoonacular-amount {
     font-size: 12px;
-  }
-  
-  .max-w-sm {
-    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  p{
-    text-align: center;
-    font-size: 8px;
-  }
-  
-  .max-w-sm {
-    width: 100%;
-  }
-  
-  .selected-recipe {
-    font-size: 25px;
+  .spoonacular-amount {
+    font-size: 10px;
   }
 }
 
+@media (max-width: 768px) {
+  .spoonacular-name {
+    font-size: 12px;
+  }
+}
 
-
+@media (max-width: 480px) {
+  .spoonacular-name {
+    font-size: 10px;
+  }
+}
 
 .container {
   display: flex;
@@ -114,11 +121,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #cooking-steps-container {
@@ -129,14 +131,14 @@ p {
 
 #cooking-steps {
   text-align: center;
-  font: size 18px;
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {
   #cooking-steps-container {
     text-align: left;
   }
-  
+
   #cooking-steps {
     text-align: left;
     font-size: 16px;
@@ -147,28 +149,23 @@ p {
   #cooking-steps-container {
     text-align: center;
   }
-  
+
   #cooking-steps {
     text-align: center;
     font-size: 14px;
   }
 }
 
-button{
+button {
   position: absolute;
   margin-top: 10px;
   right: 0;
-
 }
 
 h1 {
   text-align: center;
   justify-content: center;
   margin-top: 20px;
-}
-
-li {
-  text-align: center;
 }
 
 footer {
@@ -191,4 +188,5 @@ footer {
     font-size: 13px;
     background: rgb(207, 233, 242);
   }
+}
 }
