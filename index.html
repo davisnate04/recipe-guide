@@ -27,10 +27,11 @@
         <div class="flex flex-col">
           <input
             type="search"
-            placeholder="search"
+            placeholder="Search"
             class="text-center border"
             id="search"
           />
+          <input type="submit" value="Submit" id="submit" />
           <hr />
         </div>
         <div id="filters">
@@ -57,12 +58,29 @@
                 <li>Pescetarian</li>
               </ul>
             </li>
+            <li>
+                <span class="caret">Intolerances</span>
+                <ul class="nested">
+                  <li>Dairy</li>
+                  <li>Egg</li>
+                  <li>Gluten</li>
+                  <li>Grain</li>
+                  <li>Peanut</li>
+                  <li>Seafood</li>
+                  <li>Sesame</li>
+                  <li>Shellfish</li>
+                  <li>Soy</li>
+                  <li>Sulfite</li>
+                  <li>Tree Nut</li>
+                  <li>Wheat</li>
+                </ul>
+              </li>
           </ul>
         </div>
       </div>
 
       <div class="display-recipes" id="recipes">
-        <div class="grid-container">
+        <div id="grid-container">
           <div class="grid-item">
             <a
               href="https://spoonacular.com/recipes/healthy-quinoa-salad-1847920"
@@ -102,6 +120,6 @@
         <h1>Thank You for visiting Us!</h1>
       </div>
     </footer>
-    <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/index.js"></script>
   </body>
 </html>
