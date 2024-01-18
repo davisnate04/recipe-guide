@@ -4,7 +4,7 @@ const queryId = urlParams. get ('selectedRecipe')
 // need params to be selected recipe when setting it in index/hompage html 
 
 // GET for query id (name)
-fetch (`https://api.spoonacular.com/recipes/complexSearch?query=${queryId}&apiKey=19a1a36ee25a40f58a81525e4812cde9`)
+fetch (`https://api.spoonacular.com/recipes/complexSearch?query=${id}&apiKey=19a1a36ee25a40f58a81525e4812cde9`)
 .then(response => response.json())
 .then (data => {
     console.log (data)
