@@ -1,4 +1,15 @@
-h// Retrieve ID from homepage.html
+// Main html js code
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+
+// Retrieve ID from homepage.html
 const urlParams = new URLSearchParams (window.location.search);
 const id = urlParams. get ('selectedRecipe')
 
@@ -57,13 +68,4 @@ function addToFavorites(id, name) {
   
     console.log(`Recipe ${name} with ID ${id} added to favorites!`);
   }
-// Main html js code
-  var toggler = document.getElementsByClassName("caret");
-var i;
 
-for (i = 0; i < toggler.length; i++) {
-  toggler[i].addEventListener("click", function() {
-    this.parentElement.querySelector(".nested").classList.toggle("active");
-    this.classList.toggle("caret-down");
-  });
-}
