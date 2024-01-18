@@ -13,9 +13,15 @@ fetch (`https://api.spoonacular.com/recipes/complexSearch?query=${id}&apiKey=19a
 }
 )
 
+// Assigning variable to container element 
+const = ingredientsWidgetContainer
 
 
-// Make a GET 
+// Make a GET for the ingredients list widget 
+fetch (`https://api.spoonacular.com/recipes/${id}/ingredientWidget?apiKey=19a1a36ee25a40f58a81525e4812cde9`)
+.then (response )
+
+// Make a GET for receipe name,cooking steps
 fetch (`https://api.spoonacular.com/recipes/${id}/analyzedInstructions?apiKey=19a1a36ee25a40f58a81525e4812cde9`)
 
 .then(response => response.json())
@@ -71,4 +77,14 @@ function addToFavorites(id, name) {
   
     console.log(`Recipe ${name} with ID ${id} added to favorites!`);
   }
+// Event listener for Recipe Guide heading
+document.querySelector('.recipe-guide a').addEventListener('click', function(event) {
+  event.preventDefault();
+  window.location.href = 'index.html';
+});
 
+// Event listener for Favorite Recipes heading
+document.querySelector('.mr-3 a').addEventListener('click', function(event) {
+  event.preventDefault();
+  window.location.href = 'index.html';
+});
