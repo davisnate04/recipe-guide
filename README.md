@@ -35,13 +35,11 @@ For the Recipe Guide we used the [spoonacular API](https://spoonacular.com/food-
 The page contains the following file structure:
 Main Page
 HTML - index.html
-Assets - CSS - style.css - JavaScript - script.js
+     - recipe-page.html
+Assets - CSS - style.css; recipe-pg.css;
+       - JavaScript - index.js; script.js; recipe-pg-2.js;
 Images folder
 Readme.md
-
-Recipe Page
-HTML - recipe-page.html
-Assets - CSS - recipe-pg.css - JavaScript - script.js
 
 ## Summary
 

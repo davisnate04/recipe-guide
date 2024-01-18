@@ -53,6 +53,7 @@ button {
 
 .grid-item {
     border: gray solid 3px;
+    position:relative;
     width:100%;
 }
 
@@ -157,6 +158,15 @@ ul,
 
 .filters {
     margin-left:5px;
+}
+
+.favoriteBtn {
+    position:absolute;
+    top: 1%;
+    right:1%;
+    height:15%;
+    width: 8%;
+    font-size:175%;
 }
 
 
