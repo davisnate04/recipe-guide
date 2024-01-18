@@ -27,14 +27,19 @@ html {
     font-size: 10px;
   }
 }
-
-
-#ingredients-list {
+#ingredients-widget h2 {
+  color: blue;
   margin-top: 10px;
-  padding-left: 0;
-  list-style-type: none;
-  font-size: 16px;
+  border: 1px solid lightskyblue;
+  font-size: 14px;
+
+
 }
+
+#ingredients-widget ul {
+  list-style-type: square;
+}
+
 
 .selected-recipe {
   font-size: 35px;
@@ -119,6 +124,7 @@ p {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 #cooking-steps-container {
