@@ -6,6 +6,7 @@ const queryId = urlParams.get('selectedRecipe');
 fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${queryId}&apiKey=19a1a36ee25a40f58a81525e4812cde9`)
   .then(response => response.json())
   .then(data => {
+    console.log('complex search api');
     console.log(data);
     console.log(queryId);
     const id = data.id;
@@ -14,21 +15,27 @@ fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${queryId}&apiKey
     const ingredientsWidgetContainer = document.getElementById('ingredients-widget');
 
     // Make a GET for the ingredients list widget
-    fetch(`https://api.spoonacular.com/recipes/${queryId}/ingredientWidget?apiKey=19a1a36ee25a40f58a81525e4812cde9`)
+    //https://api.spoonacular.com/recipes/1082038/ingredientWidget
+    fetch(`https://api.spoonacular.com/recipes/${queryId}/ingredientWidget?apiKey=19a1a36ee25a40f58a81525e4812cde9&defaultCss=true`)
       .then(response => response.text())
       .then(widgetHtml => {
+        // call parameter and 
+        console.log('ingrdent-widgetAPI');
+        console.log(widgetHtml);
         ingredientsWidgetContainer.innerHTML = widgetHtml;
       })
       .catch(error => {
         console.error('Error:', error);
       });
 
+      // tell which api call tocode use a weight 
     // Make a GET for recipe name, cooking steps
     fetch(`https://api.spoonacular.com/recipes/${queryId}/analyzedInstructions?apiKey=19a1a36ee25a40f58a81525e4812cde9`)
       .then(response => response.json())
       .then(data => {
         const recipeNameElement = document.querySelector('.selected-recipe');
         recipeNameElement.textContent = data.name;
+        console.log ("analyzedInstructions")
         console.log(data);
 
         // Display the cooking steps

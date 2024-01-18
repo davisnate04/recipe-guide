@@ -11,43 +11,47 @@
 </head>
 <body>
   <div class="recipe-background">
-  <header>
-    <div class="nav-bar">
-      <nav class="flex justify-between">
-        <h1 class="ml-3 text-center recipe-guide"><a href="index.html">Recipe Guide</a></h1>
-        <h1 class="mr-3"><a href="index.html">Favorite Recipes</a></h1>
-      </nav>
-    </div>
-  </header>
-  <main class="flex justify-center items-start h-screen">
-    <div class="w-1/4">
-      <div class="relative h-32 w-32">
-        <div class="absolute inset-0">
-          <div id="ingredients-widget"></div>
-            
+    <header>
+      <div class="nav-bar">
+        <nav class="flex justify-between">
+          <h1 class="ml-3 text-center recipe-guide"><a href="index.html">Recipe Guide</a></h1>
+          <h1 class="mr-3"><a href="index.html">Favorite Recipes</a></h1>
+        </nav>
+      </div>
+    </header>
+    <main class="flex justify-center items-start h-screen">
+      <div class="ingredients-container border-none border-2  rounded-md  ">
+        <div class="flex flex-col md:flex-row">
+          <div class="w-full mr-10 md:w-1/2 lg:w-1/3">
+            <div class="ingredients-container ">
+            </div>
+          </div>
+        </div>
+        <div class="ingredient">
+          <div class="ingredient-details">
+            <p class="spoonacular-name">Big Bank Sandwich</p>
+            <p class="spoonacular-amount">45oz</p>
+          </div>
+          <img class="widget-image" src="assets/recipe-background.jpg" title="Blahhh" alt="">
         </div>
       </div>
-    </div>
-    <div class="w-3/4 flex justify-center items-center">
-      <div id="recipe-container">
-        <div>      
-          <h1 class="text-center mr-10"><span class="selected-recipe text-center">Chicken Soup</span></h1>
-          <ol id="cooking-steps-container">
-            <li id="cooking-steps">Step 1</li>
-            <li></li>
-            <li></li>
-          </ol>
+      <div class="w-3/4 flex justify-center items-center">
+        <div id="recipe-container">
+          <div>
+            <h1 class="text-center mr-10"><span class="selected-recipe">Chicken Soup</span></h1>
+            <ol id="cooking-steps-container">
+              <li id="cooking-steps"></li>
+            </ol>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer>
-    <div class="footer flex justify-center">
-      <h1>Thank you for visiting our site! Enjoy the recipes</h1>
-    </div>
-  </footer>
-</div>
+    </main>
+    <footer>
+      <div class="footer flex justify-center">
+        <h1>Thank you for visiting our site! Enjoy the recipes</h1>
+      </div>
+    </footer>
+  </div>
   <script src="assets/javascript/receipe-pg-2.js"></script>
-
 </body>
 </html>
