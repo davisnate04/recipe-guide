@@ -72,3 +72,4 @@ function addToFavorites(id, name) {
     console.log(`Recipe ${name} with ID ${id} added to favorites!`);
   }
 
+
