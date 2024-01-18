@@ -111,7 +111,7 @@ function createFilter() {
 
 submit.addEventListener("click", function () {
     createFilter();
-  let link = `https://api.spoonacular.com/recipes/complexSearch/?query=${search.value}&cuisine=${cuisine}&intolerances=${intolerances}&diet=${diet}&apiKey=${api}&number=20`;
+  let link = `https://api.spoonacular.com/recipes/complexSearch/?query=${search.value}&cuisine=${cuisine}&intolerances=${intolerances}&diet=${diet}&apiKey=${api}&number=25`;
 
   callApi(link);
 });
