@@ -16,7 +16,7 @@ header nav {
     font-size: 30px;
 }
 h1 {
-    font-size: 25px;
+    font-size: 25px !important;
     font-weight: inherit;
 }
 
