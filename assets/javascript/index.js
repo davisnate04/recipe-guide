@@ -13,7 +13,7 @@ let intolerances = [];
 let cuisine = [];
 let diet = [];
 
-async function callApi(requestUrl) {
+function callApi(requestUrl) {
   fetch(requestUrl)
     .then(response => response.json())
     .then(data => {
@@ -62,53 +62,56 @@ for (const child of nested) {
   }
 }
 
-submit.addEventListener("click", function () {
-  for (child of filters) {
-    let parent = child.parentElement.parentElement.parentElement;
-    let setChild = child.previousSibling.data;
-
-    if (child.closest("li")) {
-      if (child.checked) {
-        switch (parent.id) {
-          case "cuisine":
-            if (!cuisine.includes(setChild)) {
-              cuisine.push(setChild);
+function createFilter() {
+    for (child of filters) {
+        let parent = child.parentElement.parentElement.parentElement;
+        let setChild = child.previousSibling.data;
+    
+        if (child.closest("li")) {
+          if (child.checked) {
+            switch (parent.id) {
+              case "cuisine":
+                if (!cuisine.includes(setChild)) {
+                  cuisine.push(setChild);
+                }
+                break;
+    
+              case "intolerances":
+                if (!intolerances.includes(setChild)) {
+                    intolerances.push(setChild);
+                }
+                break;
+                case "diet":
+                if (!diet.includes(setChild)) {
+                    diet.push(setChild);
+                }
+                break;
+              default:
+                return;
             }
-            break;
-
-          case "intolerances":
-            if (!intolerances.includes(setChild)) {
-                intolerances.push(setChild);
+          } else {
+            switch (parent.id) {
+              case "cuisine":
+                cuisine = cuisine.filter((c) => c !== setChild);
+                break;
+    
+              case "intolerances":
+                intolerances = intolerances.filter((c) => c !== setChild);
+                break;
+                case "diet":
+                diet = diet.filter((c) => c !== setChild);
+                break;
+              default:
+                return;
             }
-            break;
-            case "diet":
-            if (!diet.includes(setChild)) {
-                diet.push(setChild);
-            }
-            break;
-          default:
-            return;
-        }
-      } else {
-        switch (parent.id) {
-          case "cuisine":
-            cuisine = cuisine.filter((c) => c !== setChild);
-            break;
-
-          case "intolerances":
-            intolerances = intolerances.filter((c) => c !== setChild);
-            break;
-            case "diet":
-            diet = diet.filter((c) => c !== setChild);
-            break;
-          default:
-            return;
+          }
         }
       }
-    }
-  }
+}
+
+submit.addEventListener("click", function () {
+    createFilter();
   let link = `https://api.spoonacular.com/recipes/complexSearch/?q=${search.value}&cuisine=${cuisine}&intolerances=${intolerances}&diet=${diet}&apiKey=${api}&number=20`;
 
-  callApi(link)
-  console.log("Hello")
+  callApi(link);
 });
