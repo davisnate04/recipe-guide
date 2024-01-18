@@ -1,4 +1,4 @@
-h// Retrieve ID from homepage.html
+// Retrieve ID from homepage.html
 const urlParams = new URLSearchParams (window.location.search);
 const id = urlParams. get ('selectedRecipe')
 
