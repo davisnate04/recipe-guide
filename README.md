@@ -47,13 +47,19 @@ While developing this page, we aimed to make it useful down to the smallest deta
 Our Motto was also simple and useful recipes for every taste.
 The Recipe Guide runs functionally with the given directions by the user. Hope you use and enjoy our app as we do while creating it. Enjoy your recipes / meals. Bon Apetit!
 
-<img src="./images/recipe-guide2.png">
+<img src="./images/image-1.png">
 
-<img src="./images/recipe-guide-3.png">
+<img src="./images/image-2.png">
+
+<img src="./images/image-3.png">
 
 ## Deployment Link
 
 https://davisnate04.github.io/recipe-guide/
+
+## Presentation Link 
+
+[PresentationLink](https://docs.google.com/presentation/d/12VwS93yDTonGF9yVTSeGmWFfMyaEkAVIYAh_19W16HM/edit?usp=sharing) 
 
 ## Authors
 
