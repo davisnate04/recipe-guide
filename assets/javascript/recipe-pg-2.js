@@ -31,7 +31,7 @@ fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${queryId}&apiKey
       .then(data => {
         const recipeNameElement = document.querySelector('.selected-recipe');
         recipeNameElement.textContent = data[0].name;
-        console.log (“analyzedInstructions”)
+        console.log ("analyzedInstructions")
         console.log(data);
         // Display the cooking steps
         const stepsList = document.getElementById('cooking-steps-container');
