@@ -9,7 +9,7 @@ const gridContainer = document.getElementById("grid-container")
 const urlParams = new URLSearchParams(window.location.search)
 let favoriteList = JSON.parse(localStorage.getItem("myFavorites")) || [];
 
-var api = "e0d1d6a7494740a8b04492f03e59ebcc ";
+var api = "e0d1d6a7494740a8b04492f03e59ebcc";
 var i;
 
 let intolerances = [];
