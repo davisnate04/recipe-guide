@@ -15,7 +15,7 @@ var i;
 let intolerances = [];
 let cuisine = [];
 let diet = [];
-
+// Checks if you are on the favorite page
 if (urlParams.has('favorites')) {
     for (const child of gridItem) {
       child.style.display = "none";
@@ -26,6 +26,7 @@ if (urlParams.has('favorites')) {
     }
 }
 
+// Calls the api
 function callApi(requestUrl) {
   fetch(requestUrl)
     .then(response => response.json())
@@ -36,6 +37,7 @@ function callApi(requestUrl) {
     });
 }
 
+// Makes the nested elements visible
 for (const child of toggler) {
   child.addEventListener("click", function () {
     this.parentElement.querySelector(".nested").classList.toggle("active");
@@ -43,6 +45,7 @@ for (const child of toggler) {
   });
 }
 
+// Add a checkbox next to all the nested elements
 for (const child of nested) {
   for (i = 0; i < child.children.length; i++) {
     let checkbox = document.createElement("input");
@@ -53,7 +56,7 @@ for (const child of nested) {
   }
 }
 
-
+// Changes the inner Html to a filled in star for the favorite
 for (i = 0; i < favoriteBtn.length; i++) {
   var findFavorite = favoriteList.find(function(test) {return test.url == favoriteBtn[i].parentElement.children[1].href})
 
@@ -68,6 +71,7 @@ for (i = 0; i < favoriteBtn.length; i++) {
   })
 }
 
+// Creates the card used for the recipes
 function createCard(image, title, url, favorited) {
     const div = document.createElement("div");
     const a = document.createElement("a");
@@ -103,6 +107,7 @@ function createCard(image, title, url, favorited) {
     p.textContent = title;
 }
 
+// Favorites the recipe and saves it to localStorage
 function favoriteRecipe(favoriteButton) {
     let favorites = {
       "url": favoriteButton.parentElement.children[0].href,
@@ -131,6 +136,7 @@ function favoriteRecipe(favoriteButton) {
   localStorage.setItem("myFavorites", JSON.stringify(favoriteList));
 }
 
+// Pushs the filters into the url
 function createFilter() {
     for (child of filters) {
         let parent = child.parentElement.parentElement.parentElement;
@@ -177,7 +183,7 @@ function createFilter() {
         }
       }
 }
-
+// Submits the search
 submit.addEventListener("click", function () {
     createFilter();
     for (const child of gridItem) {
